@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - Johnson</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Theme Colors matching your design */
+    :root {
+      --bg-dark: #190506;       /* Main dark background */
+      --card-bg: #2b0c0e;       /* Lighter dark container */
+      --accent-red: #ff0d1a;    /* Bright red highlight color */
+      --text-muted: #d0a3a6;    /* Soft text color */
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: #ffffff;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .btn-red {
+      background-color: var(--accent-red);
+      color: #fff;
+      border: none;
+      font-weight: 500;
+    }
+
+    .btn-red:hover {
+      background-color: #d1000d;
+      color: #fff;
+    }
+
+    .bg-custom-card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+    }
+
+    /* Accordion Custom Styling */
+    .accordion-item {
+      background-color: var(--card-bg);
+      border: 1px solid #421417;
+      border-radius: 12px !important;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .accordion-button {
+      background-color: var(--card-bg);
+      color: #ffffff;
+      font-weight: 600;
+      box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #381114;
+      color: #ffffff;
+    }
+
+    /* Red tint on accordion toggle icon */
+    .accordion-button::after {
+      filter: invert(30%) sepia(85%) saturate(3000%) hue-rotate(345deg) brightness(95%) contrast(100%);
+    }
+
+    .accordion-body {
+      background-color: var(--card-bg);
+      color: var(--text-muted);
+      border-top: 1px solid #421417;
+    }
+
+    .text-muted-custom {
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+        <span class="text-danger">✦</span> Johnson
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-3">
+          <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="about-us.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="contact-us.html">Contact us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="btn btn-red px-3 ms-2" href="contact-us.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FAQ Section -->
+  <section class="py-5">
+    <div class="container" style="max-width: 800px;">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold mb-3">Frequently Asked Questions</h1>
+        <p class="text-muted-custom">
+          Got questions about our recipes, meal plans, or cooking tips? Here are the answers to the most common ones.
+        </p>
+      </div>
+
+      <!-- Accordion List -->
+      <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Are all recipes beginner-friendly?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes! Every recipe comes with step-by-step instructions, clear prep times, and list of simple ingredients so you can succeed no matter your skill level in the kitchen.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Do you offer dietary-specific recipes?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely. We tag our recipes with dietary labels like Vegan, Gluten-Free, Keto, and Dairy-Free so you can easily filter and find what fits your lifestyle.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Can I substitute ingredients in your recipes?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Most of our recipes include a "Substitutions & Tips" section offering common alternatives for dairy, spices, and proteins.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How can I submit my own recipe or feedback?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We love hearing from home cooks! You can submit feedback, suggest recipes, or send ideas directly through our Contact page form.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Help Callout -->
+      <div class="p-4 bg-custom-card text-center mt-5">
+        <h4 class="fw-bold mb-2">Still have questions?</h4>
+        <p class="text-muted-custom mb-3">If you couldn't find your answer here, feel free to reach out to us.</p>
+        <a href="contact.html" class="btn btn-red px-4">Contact Support</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

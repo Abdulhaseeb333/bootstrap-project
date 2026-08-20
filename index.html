@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Website</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar py-3">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="#">
+                <!-- Red Diamond/Star Icon Representation -->
+                <span class="brand-icon me-2"></span>
+                Johnson
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links & CTA Button -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3 me-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 px-2" href="about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 px-2" href="contact-us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 px-2" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 px-2" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+
+                <!-- CTA Button -->
+                <div class="mt-3 mt-lg-0">
+                    <a href="contact-us.html" class="btn btn-red px-4 py-2">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <h1>People go crazy<br>for our recipes.</h1>
+
+                    <p>
+                        Delicious recipes made simple.
+                        Discover something tasty today.
+                    </p>
+
+                    <button class="btn btn-danger">
+                        Explore Recipes
+                    </button>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="main.jpg" class="img-fluid hero-img" alt="Delicious food">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RECIPES -->
+    <section class="recipes">
+        <div class="container">
+
+            <h2>Recent recipes</h2>
+
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+
+                        <img src="1.jpg" alt="Recipe">
+
+                        <div class="p-3">
+                            <h3>Fresh Raspberry Tart</h3>
+
+                            <p>
+                                Bake or buy a mini pastry tart shell and fill it with sweet pastry cream or vanilla
+                                pudding. Pile fresh, clean raspberries neatly on top until they form a small pyramid.
+                                Garnish with a few fresh mint leaves and serve chilled for a simple, delicious dessert.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+
+                        <img src="2.jpg" alt="Recipe">
+
+                        <div class="p-3">
+                            <h3>Grilled Meat Kebabs and Roast Potatoes</h3>
+
+                            <p>
+                                Cut chicken, beef, or lamb into small pieces, season with salt, pepper, and garlic, then
+                                thread them onto metal skewers. Grill the skewers over medium-high heat until the meat
+                                is fully cooked and slightly charred on all sides. Roast potato halves and eggplant
+                                alongside the skewers until tender. Serve hot on warm flatbread with dipping sauces like
+                                tomato salsa and garlic yogurt.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+
+                        <img src="3.jpg" alt="Recipe">
+
+                        <div class="p-3">
+                            <h3>Pan-Seared Salmon with Cucumber Salsa</h3>
+
+                            <p>
+                                Season a fresh salmon fillet with salt and pepper, then sear it in a hot skillet with
+                                olive oil until cooked through and golden. Quick-saute fresh spinach leaves in the same
+                                pan until wilted and place them on a plate as a bed for the fish. Dice fresh cucumber,
+                                tomatoes, and herbs, tossing them with olive oil and lemon juice to make a refreshing
+                                salsa. Top the hot salmon fillet with the cold cucumber salsa and serve immediately.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+
+                        <img src="19.jpg" alt="Recipe">
+
+                        <div class="p-3">
+                            <h3>Ultimate Cookies & Cream Parfait</h3>
+
+                            <p>To make this decadent dessert, crush chocolate sandwich cookies and place a layer at the
+                                bottom of a serving glass. Alternate layers of rich chocolate mousse and freshly whipped
+                                cream over the cookie base until the glass is nearly full. Drizzle a generous amount of
+                                warm chocolate fudge sauce over the top, then garnish with a swirl of whipped cream,
+                                extra cookie crumbs, and a whole cookie before serving chilled.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+
+                        <img src="20.jpg" alt="Recipe">
+
+                        <div class="p-3">
+                            <h3>Frosted Hibiscus Lemon Slushie</h3>
+
+                            <p>Brew 1 cup of dried hibiscus flowers in boiling water for 10 minutes, strain, and let
+                                cool completely before blending with 2 cups of ice, 3 tablespoons of fresh lemon juice,
+                                and 2 tablespoons of honey until slushy. Pour into a chilled jar, garnish with a lemon
+                                slice and a dried hibiscus flower, and serve immediately with a straw.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- CARD 6 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+
+                        <img src="21.jpg" alt="Recipe">
+
+                        <div class="p-3">
+                            <h3>Decadent Chocolate Fudge Shake</h3>
+
+                            <p> Blend 2 scoops of chocolate ice cream, 1 cup of whole milk, and 2 tablespoons of
+                                chocolate syrup until rich and smooth, then pour into a mason jar lined with melted
+                                chocolate along the rim. Top generously with whipped cream, stick a chocolate wafer or
+                                candy bar into the side, and finish with a heavy dusting of cocoa powder on top. </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- POPULAR SECTION -->
+    <!-- POPULAR SECTION -->
+    <section class="popular">
+        <div class="container">
+            <h2>Popular right now</h2>
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img id="img-1" src="1.jpg" alt="Recipe">
+                        <div class="p-3">
+                            <h3 id="title-1">Fresh Raspberry Tart</h3>
+                            <p id="desc-1">Bake or buy a mini pastry tart shell...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img id="img-2" src="2.jpg" alt="Recipe">
+                        <div class="p-3">
+                            <h3 id="title-2">Grilled Meat Kebabs</h3>
+                            <p id="desc-2">Cut chicken, beef, or lamb...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img id="img-3" src="3.jpg" alt="Recipe">
+                        <div class="p-3">
+                            <h3 id="title-3">Pan-Seared Salmon</h3>
+                            <p id="desc-3">Season a fresh salmon fillet...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img id="img-4" src="4.jpg" alt="Recipe">
+                        <div class="p-3">
+                            <h3 id="title-4">Spaghetti Carbonara</h3>
+                            <p id="desc-4">Classic Italian pasta made with eggs...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img id="img-5" src="5.jpg" alt="Recipe">
+                        <div class="p-3">
+                            <h3 id="title-5">Avocado Toast</h3>
+                            <p id="desc-5">Toasted sourdough topped with fresh avocado...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img id="img-6" src="6.jpg" alt="Recipe">
+                        <div class="p-3">
+                            <h3 id="title-6">Berry Smoothie Bowl</h3>
+                            <p id="desc-6">Blend of frozen berries topped with fresh fruits...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="custom-footer text-white py-5">
+        <div class="container">
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center" style="--bs-pagination-bg: #ff0000; --bs-pagination-hover-bg: #d60000;">
+                    <li class="page-item active"><a class="page-link" href="#"
+                            onclick="changePage(1); return false;">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="changePage(2); return false;">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="changePage(3); return false;">3</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="nextPage(); return false;">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Top Contact Section -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-4">What's on your mind</h2>
+                <form class="mx-auto" style="max-width: 800px;">
+                    <div class="row g-4 text-start">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="First name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="Last name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control custom-input" placeholder="Email*">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="Leave us a message...">
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-red px-4 py-2">Read more</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Middle Footer Links & Newsletter -->
+            <div class="row gy-4 my-5 justify-content-between align-items-start">
+                <!-- Brand & Navigation -->
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Replace icon path/svg as needed -->
+                        <span class="bg-danger rounded-circle p-2 me-2 d-inline-block"></span>
+                        <h4 class="m-0 fw-bold fs-3">Johnson</h4>
+                    </div>
+                    <ul class="list-unstyled custom-links">
+                        <li><a href="about-us.html" class="text-decoration-none text-white-50">About us</a></li>
+                        <li><a href="contact-us.html" class="text-decoration-none text-white-50">Contact us</a></li>
+                        <li><a href="faq.html" class="text-decoration-none text-white-50">FAQ</a></li>
+                        <li><a href="portfolio.html" class="text-decoration-none text-white-50">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscription Form -->
+                <div class="col-md-5">
+                    <h3 class="fw-bold mb-3">Don't miss the fun</h3>
+                    <p class="text-white-50 mb-2 small">Enter your email here*</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control custom-input-boxed" placeholder="Your email">
+                        <button class="btn btn-red px-4" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-25 my-4">
+
+            <!-- Bottom Social & Credits -->
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="social-icons fs-5">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="text-white-50 small">
+                    Made by <span class="text-white">Abdul Haseeb</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

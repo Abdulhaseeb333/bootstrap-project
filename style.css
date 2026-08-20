@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    background: #120303;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+/* 
+.navbar {
+    background: transparent;
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+} */
+
+/* Background matching dark radial gradient */
+.custom-navbar {
+  background: radial-gradient(circle at center, #2d0406 0%, #120102 60%, #050001 100%);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Brand Icon Circle/Diamond Placeholder */
+.brand-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  display: inline-block;
+  /* Mask/Clip effect to simulate four-point star icon */
+  clip-path: polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%);
+}
+
+/* Link Hover State */
+.custom-navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Red CTA Button Styling */
+.btn-red {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-red:hover {
+  background-color: #d60000;
+  color: #ffffff;
+}
+
+/* Mobile Dropdown Styling Adjustment */
+@media (max-width: 991.98px) {
+  .custom-navbar .navbar-collapse {
+    background: rgba(18, 1, 2, 0.95);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+  }
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(
+        135deg,
+        #330606,
+        #120303
+    );
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero p {
+    color: #ccc;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* SECTIONS */
+
+.recipes,
+.popular {
+    padding: 70px 0;
+}
+
+h2 {
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+
+/* RECIPE CARD */
+
+.recipe-card {
+    background: #250707;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    font-size: 22px;
+}
+
+.recipe-card p {
+    color: #aaa;
+}
+
+
+/* POPULAR */
+
+.popular {
+    background: #1b0505;
+}
+
+.popular img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.popular h4 {
+    margin-top: 12px;
+}
+
+
+/* BUTTON */
+
+.btn-danger {
+    background: #ff1e1e;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #d90000;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #080101;
+    padding: 30px 0;
+    color: #777;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-img {
+        margin-top: 30px;
+    }
+
+}
+/* footer */
+/* Dark Red Radial Gradient Background */
+.custom-footer {
+  background: radial-gradient(circle at center, #3b0507 0%, #150203 50%, #080001 100%);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Red Button Styling */
+.btn-red {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+.btn-red:hover {
+  background-color: #d60000;
+  color: #ffffff;
+}
+
+/* Minimal Underline Inputs for Contact Form */
+.custom-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  color: #ffffff;
+  padding-left: 0;
+}
+
+.custom-input:focus {
+  background: transparent;
+  box-shadow: none;
+  border-color: #ff0000;
+  color: #ffffff;
+}
+
+.custom-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Boxed Input for Newsletter */
+.custom-input-boxed {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0;
+  color: #ffffff;
+}
+
+.custom-input-boxed:focus {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: none;
+  border-color: #ff0000;
+  color: #ffffff;
+}
+
+.custom-input-boxed::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Links Styling */
+.custom-links li {
+  margin-bottom: 0.5rem;
+}
+
+.custom-links a:hover {
+  color: #ffffff !important;
+}
+
+
